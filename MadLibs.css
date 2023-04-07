@@ -41,3 +41,14 @@ label {
     padding: 15px 0px;
 
 }
+
+.nav-bar {
+    background-color: rgb(176, 9, 9);
+    padding: 10px 30px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}

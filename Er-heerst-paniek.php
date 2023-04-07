@@ -37,6 +37,11 @@ function test_input($data) {
 
     <body>
     
+    <div class="nav-bar">
+    <a href="Er-heerst-paniek.php">Er heerst paniek...</a>
+    <a href="Onkunde.php">Onkunde</a>
+    </div>
+
     <div class="container">
 
     <h2>Er heerst paniek...</h2>
