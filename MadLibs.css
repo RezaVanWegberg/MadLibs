@@ -21,15 +21,23 @@ body {
     padding-bottom: 40px;
 }
 
+.submit-button input {
+    width: 100px;
+    margin-right: 107px;
+
+}
+
 input {
     float: right;
+    width: 200px;
 }
 
 label {
     float: left;
-    max-width: 280px;
+    max-width: 300px;
 }
 
 .vraag {
-    background-color: yellow;
+    padding: 15px 0px;
+
 }

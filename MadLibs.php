@@ -45,88 +45,98 @@ function test_input($data) {
             
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 
-        <p class="vraag">
+        <div class="vraag">
                 <label for="welk-dier">Welk dier zou je nooit als huisdier willen hebben? </label>
                 <input type="text" name="welk-dier" id="welk-dier" value="<?php echo isset($_POST['welk-dier']) ? $_POST['welk-dier'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("welk-dier", $error)){ ?>
+                    <br>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
+        <div class="vraag">
                 <label for="belangrijkste-persoon">Wie is de belangrijkste persoon in je leven? </label>
                 <input type="text" name="belangrijkste-persoon" id="belangrijkste-persoon" value="<?php echo isset($_POST['belangrijkste-persoon']) ? $_POST['belangrijkste-persoon'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("belangrijkste-persoon", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
+        <div class="vraag">
                 <label for="welk-land">In welk land zou je graag willen wonen? </label>
                 <input type="text" name="welk-land" id="welk-land" value="<?php echo isset($_POST['welk-land']) ? $_POST['welk-land'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("welk-land", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
-                <label for="verveelt">verveelt :</label>
+        <div class="vraag">
+                <label for="verveelt">Wat doe je als je je verveelt? </label>
                 <input type="text" name="verveelt" id="verveelt" value="<?php echo isset($_POST['verveelt']) ? $_POST['verveelt'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("verveelt", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
-                <label for="speelgoed">speelgoed :</label>
+        <div class="vraag">
+                <label for="speelgoed">Met welk speelgoed speelde je als kind het meest? </label>
                 <input type="text" name="speelgoed" id="speelgoed" value="<?php echo isset($_POST['speelgoed']) ? $_POST['speelgoed'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
+                <?php if(array_key_exists("speelgoed", $error)){ ?>
+                    <br>
+                    <p style="color:red"> je hebt dit veld niet ingevuld </p>
+                <?php } ?>
+
+        </div>
+
+        <div class="vraag">
+                <label for="speelgoed">Bij welke docent spijbel je het liefst? </label>
+                <input type="text" name="speelgoed" id="speelgoed" value="<?php echo isset($_POST['speelgoed']) ? $_POST['speelgoed'] : '' ?>">
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("speelgoed", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
-                <label for="docent-spijbel">docent-spijbel :</label>
-                <input type="text" name="docent-spijbel" id="docent-spijbel" value="<?php echo isset($_POST['docent-spijbel']) ? $_POST['docent-spijbel'] : '' ?>">
-                <span style="color:red">*</span>
-                <?php if(array_key_exists("docent-spijbel", $error)){ ?>
-                    <p style="color:red"> je hebt dit veld niet ingevuld </p>
-                <?php } ?>
-
-        </p>
-
-        <p class="vraag">
-                <label for="wat-kopen">wat-kopen :</label>
+        <div class="vraag">
+                <label for="wat-kopen">Als je € 100.000- had, wat zou je dan kopen? </label>
                 <input type="text" name="wat-kopen" id="wat-kopen" value="<?php echo isset($_POST['wat-kopen']) ? $_POST['wat-kopen'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("wat-kopen", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
 
-        <p class="vraag">
-                <label for="bezigheid">bezigheid :</label>
+        <div class="vraag">
+                <label for="bezigheid">Wat is je favoriete bezigheid? </label>
                 <input type="text" name="bezigheid" id="bezigheid" value="<?php echo isset($_POST['bezigheid']) ? $_POST['bezigheid'] : '' ?>">
-                <span style="color:red">*</span>
+                <!-- <span style="color:red">*</span> -->
+                <br>
                 <?php if(array_key_exists("bezigheid", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
-        </p>
+        </div>
         
-        <div    >
-        <input id="submit" type="submit" value="submit">
+        <div class="submit-button"  >
+        <input id="submit" type="submit" value="Versturen">
         </div>
         </form>
 
