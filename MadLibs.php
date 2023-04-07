@@ -24,8 +24,11 @@
     <title>Document</title>
 </head>
 
-    <body class="container">
+    <body>
     
+    <div class="container">
+
+    <h1>Er heerst paniek...</h1>
 
     <?php  if ($_SERVER['REQUEST_METHOD'] == "GET" || !empty($error)) { ?>
             
@@ -60,9 +63,10 @@
                 <?php } ?>
 
         </p>
-
-
-            <input id="submit" type="submit" value="submit">
+        
+        <div class="submit-button">
+        <input id="submit" type="submit" value="submit">
+        </div>
         </form>
 
         <?php }  else { ?>            
@@ -81,6 +85,7 @@
             
         <?php } ?> 
 
+        </div>
         
     </body>
 </html>
