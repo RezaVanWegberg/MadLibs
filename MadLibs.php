@@ -103,11 +103,11 @@ function test_input($data) {
         </div>
 
         <div class="vraag">
-                <label for="speelgoed">Bij welke docent spijbel je het liefst? </label>
-                <input type="text" name="speelgoed" id="speelgoed" value="<?php echo isset($_POST['speelgoed']) ? $_POST['speelgoed'] : '' ?>">
+                <label for="docent">Bij welke docent spijbel je het liefst? </label>
+                <input type="text" name="docent" id="docent" value="<?php echo isset($_POST['docent']) ? $_POST['docent'] : '' ?>">
                 <!-- <span style="color:red">*</span> -->
                 <br>
-                <?php if(array_key_exists("speelgoed", $error)){ ?>
+                <?php if(array_key_exists("docent", $error)){ ?>
                     <p style="color:red"> je hebt dit veld niet ingevuld </p>
                 <?php } ?>
 
@@ -141,17 +141,24 @@ function test_input($data) {
         </form>
 
         <?php }  else { ?>            
-        <?php
-        echo "<h2>Your Input:</h2>";
-        echo "je dier: ";
-        echo $_POST['welk-dier'];
-        echo "<br>";
-        echo "je persoon: ";
-        echo $_POST['belangrijkste-persoon'];
-        echo "<br>";
-        echo "je land: ";
-        echo $_POST['welk-land'];
-        ?>
+        
+            <p>Er heerst paniek in het koningkrijk <?php echo($_POST['welk-land'])?>, Koning <?php echo($_POST['docent'])?> is ten einde raad en als koning <?php echo($_POST['docent'])?> ten einde raad is, dan roept hij zijn ten-einde-raadsheer <?php echo($_POST['belangrijkste-persoon'])?>.</p>
+
+            <p>"<?php echo($_POST['belangrijkste-persoon'])?>! Het is een ramp! Het is een schande!"</p>
+
+            <p>"Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?"</p>
+
+            <p>"Mijn <?php echo($_POST['welk-dier'])?> is verdwenen! Zo maar, zonder waarschuwing. En ik had net <?php echo($_POST['speelgoed'])?> voor hem gekocht!"</p>
+
+            <p>"Majesteit, uw <?php echo($_POST['welk-dier'])?> komt vast vanzelf weer terug?"</p>
+
+            <p>"Ja, da's leuk en aardig, maar hoe moet ik in de tussentijd <?php echo($_POST['bezigheid'])?> leren?"</p>
+
+            <p>"Maar Sire, daar kunt u toch uw <?php echo($_POST['wat-kopen'])?> voor gebruiken."</p>
+
+            <p>"<?php echo($_POST['belangrijkste-persoon'])?>, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."</p>
+
+            <p>"<?php echo($_POST['verveelt'])?>, Sire."</p>
 
             
         <?php } ?> 
