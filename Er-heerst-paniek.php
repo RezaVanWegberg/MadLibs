@@ -36,6 +36,8 @@ function test_input($data) {
 </head>
 
     <body>
+
+    <h1>Mad Libs</h1>
     
     <div class="nav-bar">
     <a href="Er-heerst-paniek.php">Er heerst paniek...</a>
@@ -170,5 +172,7 @@ function test_input($data) {
 
         </div>
         
+        <footer>Copyright © 2023 Deze website is gemaakt door Reza van Wegberg</footer>
+
     </body>
 </html>
