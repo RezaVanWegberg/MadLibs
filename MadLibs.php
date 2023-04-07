@@ -7,10 +7,21 @@
         foreach($_POST as $key => $value){
             if (!$value) {
                 $error[$key] = "$key is niet ingevuld";
+            } else {
+                $_POST[$key] = test_input($value);
             }
         };
     } else {
     };
+
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +75,7 @@
 
         </p>
         
-        <div class="submit-button">
+        <div    >
         <input id="submit" type="submit" value="submit">
         </div>
         </form>
