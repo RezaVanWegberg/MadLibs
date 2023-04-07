@@ -131,7 +131,11 @@ function test_input($data) {
 
         <?php }  else { ?>            
 
-            <p>"<?php echo($_POST['willen-kunnen'])?>."</p>
+            <p>Er zijn veel mensen die niet kunnen <?php echo($_POST['willen-kunnen'])?>. Neem nou <?php echo($_POST['opschieten'])?>. Zelfs met de hulp van een <?php echo($_POST['vakantie-item'])?>
+            of zelfs <?php echo($_POST['getal'])?> kan <?php echo($_POST['opschieten'])?> niet <?php echo($_POST['willen-kunnen'])?>. Dat heeft niet te maken met een gebrek aan <?php echo($_POST['beste-eigenschap'])?>,
+            maar met een te veel aan <?php echo($_POST['slechtste-eigenschap'])?>. Te veel <?php echo($_POST['slechtste-eigenschap'])?> leidt tot <?php echo($_POST['overkomen'])?> en dat is niet goed 
+            als je wilt <?php echo($_POST['willen-kunnen'])?>. Helaas niet voor <?php echo($_POST['opschieten'])?>.
+        </p>
 
             
         <?php } ?> 
